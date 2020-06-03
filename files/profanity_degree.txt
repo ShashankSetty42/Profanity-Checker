@@ -1,0 +1,6 @@
+index - tweetID - profanity% - found words 
+1 - #2413 - 42.86% - slur1, slur2, slur3
+2 - #2414 - 14.29% - slur2
+3 - #2415 - 16.67% - slur4
+4 - #2416 - 100.0% - slur5
+5 - #2417 - 40.0% - slur1, slur1
