@@ -42,14 +42,14 @@ with open('tweets.csv','r') as tweets_file:
     tweets = csv.reader(tweets_file, skipinitialspace=True)
     #for each row compare the tweet to the racial slur set
     for row in tweets:
-        #get degree of slurs per tweet
+        #get degree of slurs for each tweet (3rd column)
         degree = calculate_degree(row[2])
         #if no slurs are present write 0% to output file
         if degree == 0:
             # format string to copy to output file
             temp_line = ""+ str(index) + " - " + row[1] + " - " + str(degree) + "%" + " - None \n"
             output_file.write(temp_line)
-        #if more than 1 slurs is present write % to output file
+        #if more than 0 slurs is present write % to output file
         else:
             #string to store all the slurs present in the tweet
             word_list = ""
